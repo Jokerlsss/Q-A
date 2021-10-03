@@ -18,6 +18,7 @@
 	export default {
 		name: "v-absolute-btn",
 		props: {
+			// 默认路径为 static
 			imgSrc: {
 				default: 'change',
 				type: String

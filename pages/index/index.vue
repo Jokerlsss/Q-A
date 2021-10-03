@@ -1,3 +1,4 @@
+<!-- 理论背诵点 -->
 <template>
 	<view class="container">
 		<!-- 题目名称 -->
@@ -5,7 +6,7 @@
 			{{`(${count}/${maxCount})`+' '}}{{showObj.question}}
 		</view>
 		<!-- 按钮 -->
-		<l-button @click="seeAnswer" type="warn" width="100%">查看答案</l-button>
+		<!-- <l-button @click="seeAnswer" type="warn" width="100%">查看答案</l-button> -->
 		<!-- 答案区域-图 -->
 		<view v-show="showObj.imgSrc && isShowAnswer" class="answer">
 			<!-- aspectFit: 不缩放，保证长边可完全显示 -->
@@ -20,7 +21,10 @@
 		<!-- 底部安全区域 -->
 		<view class="safeArea">
 		</view>
+		<!-- 刷新题目按钮 -->
 		<l-absolute-btn bgColor="#96bf96" @click="nextQuestion" bottom="100px"></l-absolute-btn>
+		<!-- 查看答案按钮 -->
+		<l-absolute-btn bgColor="#f0ad4e" imgSrc="seeAnswer" @click="seeAnswer" bottom="180px"></l-absolute-btn>
 	</view>
 </template>
 
@@ -138,6 +142,7 @@
 	}
 
 	.title {
+		font-weight: bold;
 		margin: $marginTop 0;
 		color: #333333;
 		min-height: 2rem;

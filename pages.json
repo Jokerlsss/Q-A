@@ -7,7 +7,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "答题"
+				"navigationBarTitleText": "理论背诵"
 			}
 		}
 	    ,{
@@ -15,6 +15,15 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "搜索",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/zonghe/zonghe",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "综合知识",
                 "enablePullDownRefresh": false
             }
             
@@ -37,7 +46,12 @@
 	        "pagePath": "pages/index/index",
 	        "iconPath": "static/tabBar/tab_remember_none.png",
 	        "selectedIconPath": "static/tabBar/tab_remember.png",
-	        "text": "记忆"
+	        "text": "理论背诵"
+	    },{
+	        "pagePath": "pages/zonghe/zonghe",
+	        "iconPath": "static/tabBar/tab_zonghe_none.png",
+	        "selectedIconPath": "static/tabBar/tab_zonghe.png",
+	        "text": "综合知识"
 	    }, {
 	        "pagePath": "pages/search/search",
 	        "iconPath": "static/tabBar/tab_search_none.png",
